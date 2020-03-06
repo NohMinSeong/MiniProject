@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.MainController">
+   <children>
+      <Text layoutX="142.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHIBA">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_RIGHT" layoutX="16.0" layoutY="82.0" prefHeight="40.0" prefWidth="370.0">
+         <children>
+            <Text fx:id="msg" strokeType="OUTSIDE" strokeWidth="0.0" text="덕선이 님, 안녕하시개!">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="18.0" layoutY="126.0" prefHeight="40.0" prefWidth="176.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="커뮤니티">
+               <items>
+                  <MenuItem fx:id="sns" mnemonicParsing="false" onAction="#sns" text="DLOG" />
+                  <MenuItem fx:id="chat" mnemonicParsing="false" onAction="#chat" text="채팅" />
+               </items>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="주변검색">
+               <items>
+                  <MenuItem fx:id="hospital" mnemonicParsing="false" onAction="#hospital" text="병원" />
+                  <MenuItem fx:id="petshop" mnemonicParsing="false" onAction="#petshop" text="펫용품점" />
+               </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <Button fx:id="logout" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="로그아웃" />
+      <Pane fx:id="pane" layoutX="18.0" layoutY="166.0" prefHeight="311.0" prefWidth="364.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onKeyPressed="#key" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.JoinController">
+   <children>
+      <Text fx:id="msg" fill="RED" layoutX="46.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="307.0" />
+      <Text layoutX="140.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHIVA">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="joinbtn" layoutX="38.0" layoutY="379.0" mnemonicParsing="false" onAction="#join" prefHeight="41.0" prefWidth="324.0" style="-fx-background-color: BLACK;" text="회원 가입하기" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="29.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원가입">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <VBox alignment="CENTER_LEFT" layoutX="40.0" layoutY="145.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="아이디">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이름">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호 확인">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="애완견 이름">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="178.0" layoutY="148.0" prefHeight="200.0" prefWidth="182.0">
+         <children>
+            <HBox prefHeight="22.0" prefWidth="182.0">
+               <children>
+                  <TextField fx:id="userid" maxWidth="112.0" minHeight="25.0" minWidth="20.0" prefHeight="25.0" prefWidth="107.0" />
+                  <Button fx:id="redupbtn" mnemonicParsing="false" onAction="#redupcheck" prefHeight="25.0" prefWidth="68.0" text="중복확인">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="username" maxWidth="1.7976931348623157E308" minHeight="25.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="userpw" maxWidth="1.7976931348623157E308" minHeight="25.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </PasswordField>
+            <PasswordField fx:id="reduppw" maxWidth="1.7976931348623157E308" minHeight="25.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </PasswordField>
+            <TextField fx:id="petname" maxWidth="1.7976931348623157E308" minHeight="25.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button fx:id="backbtn" onAction="#back" layoutX="38.0" layoutY="443.0" mnemonicParsing="false" text="back" />
+   </children>
+</AnchorPane>
